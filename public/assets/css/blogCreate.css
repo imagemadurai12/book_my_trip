@@ -1,0 +1,45 @@
+.create-blog-form{
+    margin: 50px 0px;
+}
+
+.form-field-container{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap:0px;
+}
+
+.form-field-container:nth-child(4)
+{
+    margin-top:50px ;
+}
+
+
+.input-field-label{
+    font-size: 24px;
+}
+
+.form-field-container input[type="text"]
+{
+    padding: 10px;
+    width: 70%;
+    font-size: 18px;
+}
+.form-field-container textarea
+{
+    padding: 10px;
+    width: 70%;
+    font-size: 18px;
+}
+
+.form-field-container .btn-submit{
+    padding: 20px 25px;
+    background-color: #2B68A7;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+

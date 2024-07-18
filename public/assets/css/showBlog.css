@@ -1,0 +1,19 @@
+.show-blog-form .form-field-container{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    justify-content: start;
+}
+
+
+.show-blog-form .form-field-container .edit-post{
+    cursor: pointer;    
+}    
+.show-blog-form .form-field-container .delete-post{
+    background-color: rgb(147, 0, 0) !important;
+    cursor: pointer;        
+}
+
+
