@@ -18,13 +18,23 @@
                 </article>
             </div>
         </div>
-        <form action="/blogs/{{$blog->id}}/edit" method="GET" class="show-blog-form">
-            <div class="form-field-container">
-                <input type="submit" value="Edit Post" class="btn-submit edit-post" name="edit-post">
 
-                <input type="submit" value="Delete Post" class="btn-submit delete-post" name="delete-post">
-            </div>
-        </form>
+        <div class="form-button-container">
+
+            <form action="/blogs/{{$blog->id}}/edit" method="GET" class="show-blog-form edit-button-form-container">
+                <div class="form-field-container">
+                    <input type="submit" value="Edit Post" class="btn-submit edit-post" name="edit-post">
+                </div>
+            </form>
+
+            <form action="/blogs/{{$blog->id}}" method="POST" class="show-blog-form delete-button-form-container">
+                @csrf
+                @method("DELETE")
+                <div class="form-field-container">
+                    <input type="submit" value="Delete Post" class="btn-submit delete-post" name="delete-post">
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 

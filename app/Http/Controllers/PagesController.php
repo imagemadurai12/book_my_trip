@@ -38,4 +38,17 @@ class PagesController extends Controller
         // dd($id);
         return view('edit',compact('blog'));
     }
+
+    public function update(\App\Models\Blog $blog)
+    {
+        $blog->update(request(["name","description"]));
+        return redirect('blogs');
+    }
+    
+    public function delete(\App\Models\Blog $blog)
+    {
+        // dd($id);
+        $blog->delete();
+        return redirect('blogs');
+    }
 }

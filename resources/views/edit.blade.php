@@ -11,8 +11,9 @@
     <div class="ext-margin">
         <h1>Edit Blog</h1>
 
-        <form method="POST" action="" class="create-blog-form">
-            <!-- @csrf -->
+        <form method="POST" action="/blogs/{{$blog->id}}" class="create-blog-form">
+            @csrf
+            @method("PATCH")
             <div class="form-field-container blog-name-container">
                 <label for="blog-name" class="input-field-label">Blog Name</label> <br>
                 <input type="text" name="name" id="blog-name" placeholder="Enter the Blog name" value="{{$blog->name}}">

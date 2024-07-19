@@ -28,6 +28,9 @@ Route::POST('/blogs/store','App\Http\Controllers\PagesController@store');
 
 Route::GET('/blogs/{blog}/show','App\Http\Controllers\PagesController@show');
 
-Route::GET('/blogs/{blog}/edit',
-'App\Http\Controllers\PagesController@edit');
+Route::GET('/blogs/{blog}/edit','App\Http\Controllers\PagesController@edit');
+
+Route::PATCH('/blogs/{blog}','App\Http\Controllers\PagesController@update');
+
+Route::DELETE('/blogs/{blog}','App\Http\Controllers\PagesController@delete');
 

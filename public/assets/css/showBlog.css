@@ -8,6 +8,22 @@
 }
 
 
+.form-button-container{
+    /* background-color: orange; */
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+/* .form-button-container .edit-button-form-container
+{
+    background-color: lightcoral;
+}
+.form-button-container .delete-button-form-container
+{
+    background-color: lightcoral;
+} */
+
 .show-blog-form .form-field-container .edit-post{
     cursor: pointer;    
 }    

@@ -30,6 +30,7 @@
 .form-field-container textarea
 {
     padding: 10px;
+    height: 20vh;
     width: 70%;
     font-size: 18px;
 }
