@@ -18,19 +18,19 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::GET('/','App\Http\Controllers\PagesController@home');
+Route::GET('/','App\Http\Controllers\Pagescontroller@home');
 
-Route::GET('/blogs','App\Http\Controllers\PagesController@blogsCreate');
+Route::GET('/blogs','App\Http\Controllers\Pagescontroller@create');
 
-Route::GET('/blogs/create','App\Http\Controllers\PagesController@index');
+Route::GET('/blogs/create','App\Http\Controllers\Pagescontroller@index');
 
-Route::POST('/blogs/store','App\Http\Controllers\PagesController@store');
+Route::POST('/blogs/store','App\Http\Controllers\Pagescontroller@store');
 
-Route::GET('/blogs/{blog}/show','App\Http\Controllers\PagesController@show');
+Route::GET('/blogs/{blog}/show','App\Http\Controllers\Pagescontroller@show');
 
-Route::GET('/blogs/{blog}/edit','App\Http\Controllers\PagesController@edit');
+Route::GET('/blogs/{blog}/edit','App\Http\Controllers\Pagescontroller@edit');
 
-Route::PATCH('/blogs/{blog}','App\Http\Controllers\PagesController@update');
+Route::PATCH('/blogs/{blog}','App\Http\Controllers\Pagescontroller@update');
 
-Route::DELETE('/blogs/{blog}','App\Http\Controllers\PagesController@delete');
+Route::DELETE('/blogs/{blog}','App\Http\Controllers\Pagescontroller@destroy');
 
