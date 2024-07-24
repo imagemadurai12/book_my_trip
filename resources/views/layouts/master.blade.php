@@ -14,24 +14,43 @@
 
 <body>
     <div id="wrapper">
+        <style>
+            .login-credentials-container{
+                /* background-color: red; */
+            }
+            header .grid1440
+            {
+                height: 100%;
+                width: 80%;
+                /* background-color: purple; */
+                position: relative;
+            }
+            header .grid1440 .login-credentials-container{
+                position: absolute;
+                top:0%;
+                right:0%;
+            }
+        </style>
         
         <header>
             <div class="grid1440">
                 <a href="/" id="logo">
                     <img src="/assets/images/logo.jpg" alt="bookmytrip_logo" height="72">
                 </a>
+                <div class="login-credentials-container">
                 <div id="contact">
                     <p> Call us at (Toll-free) </p>
                     <h3> 1800-500-5555 </h3>
                 </div>
                 <div id="links">
-                    <p> <a href="#login"> Login </a> | <a href="#login"> Sign Up </a> </p>
+                    <p> <a href="/login"> Login </a> | <a href="/register"> Sign Up </a> </p>
                 </div>
                 <div id="searchBar">
                     <form action="" id="searchForm">
                         <input type="submit" value=" " />
                         <input type="text" placeholder="Search the website" />
                     </form>
+                </div>
                 </div>
             </div>
         </header>
