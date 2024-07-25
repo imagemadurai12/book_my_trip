@@ -3,6 +3,12 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+
+// use Illuminate\Support\Facades\Auth;
+// https://laravel.com/docs/7.x/authentication
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

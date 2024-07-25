@@ -43,7 +43,7 @@
                     <h3> 1800-500-5555 </h3>
                 </div>
                 <div id="links">
-                    <p> <a href="/login"> Login </a> | <a href="/register"> Sign Up </a> </p>
+                    <p> <a href="/login"> Login </a> | <a href="/register"> Sign Up </a> | <a href="/dashboard"> Dashboard </a> </p>
                 </div>
                 <div id="searchBar">
                     <form action="" id="searchForm">
